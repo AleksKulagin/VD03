@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header class="bg-primary text-white p-3">
+    <div class="container">
+        <h1 class="d-inline">Название Сайта</h1>
+        <nav class="d-inline float-right">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Основной контент -->
+<main class="container my-4">
+
+    <!-- Секция 1: Слайдер -->
+    <div id="carouselExample" class="carousel slide mb-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="Слайд 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+
+    <!-- Секция 2: Карточки -->
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="1.jpg" class="card-img-top" alt="Карточка 1">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 1</h5>
+                    <p class="card-text">Некоторый текст о карточке 1.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="2.jpg" class="card-img-top" alt="Карточка 2">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 2</h5>
+                    <p class="card-text">Некоторый текст о карточке 2.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="3.jpg" class="card-img-top" alt="Карточка 3">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 3</h5>
+                    <p class="card-text">Некоторый текст о карточке 3.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция 3: Аккордеон -->
+    <div id="accordion" class="mb-4">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Заголовок 1
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Здесь находится информация для первого пункта аккордеона.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Заголовок 2
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Здесь находится информация для второго пункта аккордеона.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Заголовок 3
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Здесь находится информация для третьего пункта аккордеона.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Футер -->
+<footer class="bg-dark text-white text-center p-4">
+    <div class="container">
+        <p>Контактная информация:<br>
+        Телефон: +7 (123) 456-78-90<br>
+        Email: example@example.com</p>
+        <p>
+            <a href="#" class="text-white">Facebook</a> |
+            <a href="#" class="text-white">Twitter</a> |
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Подключение jQuery и Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
